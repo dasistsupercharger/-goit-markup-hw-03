@@ -10,10 +10,10 @@
     --gap-bottom: 0 0 8px 0
 }
 
-* {
+/** {
     margin: 0;
     padding: 0;
-}
+}*/
 
 body {
     background-color: var(--white-color);
@@ -48,6 +48,7 @@ img {
     padding: 0 15px;
 }
 
+
 .list {
     list-style-type: none;
 }
@@ -61,7 +62,11 @@ img {
     padding: 120px 0;
 }
 
+
 /* HEADER */
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
 .header-section {
     border-bottom: 1px solid #E7E9FC;
 }
@@ -69,11 +74,13 @@ img {
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    /*padding: 24px 15px;*/
 }
 
 .header-nav {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-nav .logo {
@@ -120,6 +127,11 @@ img {
     color: var(--pressed-state);
 }
 
+.contact {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .contact-list {
     display: flex;
 }
@@ -158,11 +170,12 @@ img {
     background-color: var(--primary-brand);
     color: var(--white-color);
     cursor: pointer;
-    position: absolute;
+    /*position: absolute;*/
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
+    margin-top: 64px;
     /*margin-left: 636px;
     margin-top: 48px;
     margin-right: 635;
@@ -177,6 +190,10 @@ img {
 .button:hover,
 .button:focus {
     background-color: var(--pressed-state)
+}
+
+.section-directions {
+    padding-top: 0px;
 }
 
 .section-title {
@@ -253,7 +270,7 @@ img {
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    t}
+    }
 
 .section-team__title,
 .section-team__text {
@@ -286,7 +303,6 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
     cursor: pointer;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -315,7 +331,7 @@ img {
     margin-bottom: 48px;
 }
 
-.portfolio-item:last-child {
+.portfolio-item:nth-child(3n) {
     margin-right: 0px;
 }
 
@@ -337,7 +353,7 @@ img {
     color: var(--accent-color);
     width: 265px;
     letter-spacing: 0.02em;
-    
+}
 
 .footer-logo {
     color: var(--light-mode-backgrounds);
