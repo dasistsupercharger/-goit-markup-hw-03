@@ -322,18 +322,21 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
-.portfolio-item {
-    /*flex-basis: calc(100% / 3 -24px);
-    margin: var(--card-set-gap);*/
+/*.portfolio-item {
+    flex-basis: calc(100% / 3 -24px);
+    margin: var(--card-set-gap);
     margin-right: 24px;
     margin-bottom: 48px;
-}
+    
+}*/
 
-.portfolio-item:nth-child(3n) {
+/*.portfolio-item:nth-child(3n) {
     margin-right: 0px;
-}
+}*/
 
 
 .card-content {
